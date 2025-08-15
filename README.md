@@ -44,6 +44,7 @@ This project also aims to implement the following advanced features:
 ## Deliverables
 
 *   `cover_drive_analysis_realtime.py`: The main Python script for the analysis.
+*   `app.py`: The Streamlit web app.
 *   `/output/`: A directory containing the output files:
     *   `annotated_video.mp4`: The annotated video with overlays.
     *   `evaluation.json`: The final evaluation report.
