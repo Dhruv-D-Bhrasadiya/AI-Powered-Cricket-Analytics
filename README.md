@@ -84,14 +84,14 @@ Below is a real example from this repo. You can play the input and annotated vid
 
 ### Input Video
 <!-- GitHub renders MP4 with HTML5 <video>. If it doesn’t show, ensure the file is tracked (see Git LFS note below). -->
-<video src="input_video.mp4" controls title="Input: Cover Drive (examples/input_video.mp4)" width="640">
+<video src="https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics/blob/main/input_video.mp4?raw=true" controls title="input_video.mp4" width="">
   Your browser does not support the video tag.
 </video>
 
 ---
 
 ### Output: Annotated Video
-<video src="./output/annotated_video.mp4" controls title="Output: Annotated Video (output/annotated_video.mp4)" width="640">
+<video src="https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics/blob/main/output/annotated_video.mp4?raw=true" controls title="output/annotated_video.mp4" width="">
   Your browser does not support the video tag.
 </video>
 
@@ -124,6 +124,7 @@ Below is a real example from this repo. You can play the input and annotated vid
   "follow_through": { "score": 0.0, "comments": "" }
 }
 ```
+</details>
 
 ## Assumptions & Limitations
 
