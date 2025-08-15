@@ -55,8 +55,8 @@ This project also aims to implement the following advanced features:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/ai-powered-cricket-analytics.git
-    cd ai-powered-cricket-analytics
+    git clone https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics.git
+    cd AI-Powered-Cricket-Analytics
     ```
 2.  **Install the dependencies:**
     ```bash
