@@ -78,21 +78,15 @@ This project also aims to implement the following advanced features:
 
 Below is a real example from this repo. You can play the input and annotated videos right here, and open the reports with one click.
 
-> Paths used below assume:
-> - Input video at `input_video.mp4`
-> - Outputs at `output/annotated_video.mp4`, `output/evaluation.json`, `output/evaluation_report.txt`, `output/temporal_smoothness.png`
-
 ### Input Video
-<!-- GitHub renders MP4 with HTML5 <video>. If it doesn’t show, ensure the file is tracked (see Git LFS note below). -->
+
 <video src="https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics/blob/main/input_video.mp4?raw=true" controls title="input_video.mp4" width="">
-  Your browser does not support the video tag.
 </video>
 
 ---
 
 ### Output: Annotated Video
 <video src="https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics/blob/main/output/annotated_video.mp4?raw=true" controls title="output/annotated_video.mp4" width="">
-  Your browser does not support the video tag.
 </video>
 
 ---
@@ -110,9 +104,6 @@ Below is a real example from this repo. You can play the input and annotated vid
 
 <details>
 <summary>Preview: JSON (first lines)</summary>
-
-> Click the filename above to see the full JSON in GitHub.  
-> (Tip: Keep this snippet short in the README.)
 
 ```json
 {
