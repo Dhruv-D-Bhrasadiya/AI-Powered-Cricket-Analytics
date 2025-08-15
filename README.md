@@ -102,20 +102,6 @@ Below is a real example from this repo. You can play the input and annotated vid
 - 📄 **Evaluation (JSON):** [`output/evaluation.json`](./output/evaluation.json)
 - 🧾 **Evaluation Report (TXT):** [`output/evaluation_report.txt`](./output/evaluation_report.txt)
 
-<details>
-<summary>Preview: JSON (first lines)</summary>
-
-```json
-{
-  "overall_score": 0.0,
-  "footwork": { "score": 0.0, "comments": "" },
-  "head_position": { "score": 0.0, "comments": "" },
-  "swing_control": { "score": 0.0, "comments": "" },
-  "balance": { "score": 0.0, "comments": "" },
-  "follow_through": { "score": 0.0, "comments": "" }
-}
-```
-</details>
 
 ## Assumptions & Limitations
 
