@@ -43,8 +43,8 @@ This project also aims to implement the following advanced features:
 
 ## Deliverables
 
-*   `cover_drive_analysis_realtime.py`: The main Python script for the analysis.
 *   `app.py`: The Streamlit web app.
+*   `cover_drive_analysis_realtime.py`: The main Python script for the analysis.
 *   `/output/`: A directory containing the output files:
     *   `annotated_video.mp4`: The annotated video with overlays.
     *   `evaluation.json`: The final evaluation report.
@@ -66,9 +66,63 @@ This project also aims to implement the following advanced features:
     ```bash
     streamlit run app.py
     ```
+    OR 
+    ```bash
+    python cover_drive_analysis_realtime.py
+    ```
 4.  **Open your web browser** and go to the URL provided by Streamlit.
-5.  **Upload a video** of a cover drive and wait for the analysis to complete.
+5.  **Upload a video** of a cover drive and wait for the analysis to complete both are available in the repository.
 6.  **View the results** and download the annotated video and evaluation report.
+
+## Example: Input & Outputs (Cover Drive)
+
+Below is a real example from this repo. You can play the input and annotated videos right here, and open the reports with one click.
+
+> Paths used below assume:
+> - Input video at `input_video.mp4`
+> - Outputs at `output/annotated_video.mp4`, `output/evaluation.json`, `output/evaluation_report.txt`, `output/temporal_smoothness.png`
+
+### Input Video
+<!-- GitHub renders MP4 with HTML5 <video>. If it doesn’t show, ensure the file is tracked (see Git LFS note below). -->
+<video src="input_video.mp4" controls title="Input: Cover Drive (examples/input_video.mp4)" width="640">
+  Your browser does not support the video tag.
+</video>
+
+---
+
+### Output: Annotated Video
+<video src="./output/annotated_video.mp4" controls title="Output: Annotated Video (output/annotated_video.mp4)" width="640">
+  Your browser does not support the video tag.
+</video>
+
+---
+
+### Output: Temporal Smoothness
+<p align="left">
+  <img src="./output/temporal_smoothness.png" alt="Temporal Smoothness Plot" width="640">
+</p>
+
+---
+
+### Output Reports
+- 📄 **Evaluation (JSON):** [`output/evaluation.json`](./output/evaluation.json)
+- 🧾 **Evaluation Report (TXT):** [`output/evaluation_report.txt`](./output/evaluation_report.txt)
+
+<details>
+<summary>Preview: JSON (first lines)</summary>
+
+> Click the filename above to see the full JSON in GitHub.  
+> (Tip: Keep this snippet short in the README.)
+
+```json
+{
+  "overall_score": 0.0,
+  "footwork": { "score": 0.0, "comments": "" },
+  "head_position": { "score": 0.0, "comments": "" },
+  "swing_control": { "score": 0.0, "comments": "" },
+  "balance": { "score": 0.0, "comments": "" },
+  "follow_through": { "score": 0.0, "comments": "" }
+}
 
 ## Assumptions & Limitations
 
