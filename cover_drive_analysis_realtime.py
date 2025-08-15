@@ -1,4 +1,3 @@
-
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -161,7 +160,7 @@ def main():
         else:
             final_scores[category] = {"score": 0, "feedback": "No data"}
 
-    # Add feedback based on scores (example)
+    # Add feedback based on scores
     if final_scores["swing_control"]["score"] > 7:
         final_scores["swing_control"]["feedback"] = "Excellent swing control."
     else:
