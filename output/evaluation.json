@@ -8,8 +8,8 @@
         "feedback": "Good head position over the front knee."
     },
     "swing_control": {
-        "score": 8.811881188118813,
-        "feedback": "Excellent swing control."
+        "score": 5.073529411764706,
+        "feedback": "Work on maintaining a high elbow."
     },
     "balance": {
         "score": 0,
@@ -19,5 +19,5 @@
         "score": 0,
         "feedback": "No data"
     },
-    "skill_grade": "Advanced"
+    "skill_grade": "Intermediate"
 }

@@ -123,6 +123,7 @@ Below is a real example from this repo. You can play the input and annotated vid
   "balance": { "score": 0.0, "comments": "" },
   "follow_through": { "score": 0.0, "comments": "" }
 }
+```
 
 ## Assumptions & Limitations
 
