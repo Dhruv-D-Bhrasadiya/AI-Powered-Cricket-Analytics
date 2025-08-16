@@ -1,4 +1,4 @@
-# AthleteRise – AI-Powered Cricket Analytics
+# AI-Powered Cricket Analytics
 
 This project is a Python-based system that analyzes cricket cover drive shots from a full video in real-time. It uses pose estimation to extract key biomechanical metrics and provides feedback on the player's performance. The output is an annotated video with live overlays and a final shot evaluation.
 
