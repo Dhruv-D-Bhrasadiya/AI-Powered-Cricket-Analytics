@@ -74,13 +74,13 @@ This project also aims to implement the following advanced features:
 5.  **Upload a video** of a cover drive and wait for the analysis to complete both are available in the repository.
 6.  **View the results** and download the annotated video and evaluation report.
 
-## Example: Input & Outputs (Cover Drive)
+## Example
 
 Below is a real example from this repo. You can play the input and annotated videos/GIFs right here, and open the reports with one click.
 
 ---
 
-### Input Videos (GIFs Side by Side)
+### Input Videos
 
 <p align="center">
   <img src="./examples/input_video.gif" alt="Input GIF 1" width="32%">
@@ -90,7 +90,7 @@ Below is a real example from this repo. You can play the input and annotated vid
 
 ---
 
-### Output: Annotated Videos (GIFs Side by Side)
+### Output: Annotated Videos
 
 <p align="center">
   <img src="./examples/annotated_video.gif" alt="Annotated GIF 1" width="32%">
@@ -100,7 +100,7 @@ Below is a real example from this repo. You can play the input and annotated vid
 
 ---
 
-### Output: Temporal Smoothness (PNGs Side by Side)
+### Output: Temporal Smoothness
 
 <p align="center">
   <img src="./examples/temporal_smoothness.png" alt="Temporal Smoothness 1" width="32%">
@@ -112,26 +112,90 @@ Below is a real example from this repo. You can play the input and annotated vid
 
 ### Output Reports 
 
-<p align="center">
-  <a href="./examples/evaluation_report_video.txt">
-    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
-  </a>
-  <a href="./examples/evaluation_video.json">
-    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
-  </a>
-  <a href="./examples/evaluation_report_left_side_angle.txt">
-    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
-  </a>
-  <a href="./examples/evaluation_left_side_angle.json">
-    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
-  </a>
-  <a href="./examples/evaluation_report_left_hander_batsmen.txt">
-    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
-  </a>
-  <a href="./examples/evaluation_left_hander_batsmen.json">
-    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
-  </a>
-</p>
+<table>
+  <tr>
+    <th>Report 1 (JSON)</th>
+    <th>Report 2 (JSON)</th>
+    <th>Report 3 (JSON)</th>
+  </tr>
+  <tr>
+    <td>
+      <pre><code>{
+    "footwork": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "head_position": {
+        "score": 10.0,
+        "feedback": "Good head position over the front knee."
+    },
+    "swing_control": {
+        "score": 5.073529411764706,
+        "feedback": "Work on maintaining a high elbow."
+    },
+    "balance": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "follow_through": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "skill_grade": "Intermediate"
+}</code></pre>
+    </td>
+    <td>
+      <pre><code>{
+    "footwork": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "head_position": {
+        "score": 10.0,
+        "feedback": "Good head position over the front knee."
+    },
+    "swing_control": {
+        "score": 8.811881188118813,
+        "feedback": "Excellent swing control."
+    },
+    "balance": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "follow_through": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "skill_grade": "Advanced"
+}</code></pre>
+    </td>
+    <td>
+      <pre><code>{
+    "footwork": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "head_position": {
+        "score": 9.957264957264957,
+        "feedback": "Good head position over the front knee."
+    },
+    "swing_control": {
+        "score": 7.6923076923076925,
+        "feedback": "Excellent swing control."
+    },
+    "balance": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "follow_through": {
+        "score": 0,
+        "feedback": "No data"
+    },
+    "skill_grade": "Advanced"
+}</code></pre>
+    </td>
+  </tr>
+</table>
 
 ## Assumptions & Limitations
 
