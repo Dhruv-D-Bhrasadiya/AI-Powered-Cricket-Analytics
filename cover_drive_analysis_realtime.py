@@ -30,7 +30,7 @@ def main():
     mp_drawing = mp.solutions.drawing_utils
 
     # Input and Output video paths
-    video_path = 'left_side_angle.mp4'
+    video_path = 'input_video.mp4'
     output_path = 'output/annotated_video.mp4'
 
     # Open the video file

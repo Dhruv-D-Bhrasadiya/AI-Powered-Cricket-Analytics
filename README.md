@@ -1,4 +1,4 @@
-# AthleteRise – AI-Powered Cricket Analytics
+# AI-Powered Cricket Analytics
 
 This project is a Python-based system that analyzes cricket cover drive shots from a full video in real-time. It uses pose estimation to extract key biomechanical metrics and provides feedback on the player's performance. The output is an annotated video with live overlays and a final shot evaluation.
 
@@ -43,8 +43,8 @@ This project also aims to implement the following advanced features:
 
 ## Deliverables
 
-*   `cover_drive_analysis_realtime.py`: The main Python script for the analysis.
 *   `app.py`: The Streamlit web app.
+*   `cover_drive_analysis_realtime.py`: The main Python script for the analysis.
 *   `/output/`: A directory containing the output files:
     *   `annotated_video.mp4`: The annotated video with overlays.
     *   `evaluation.json`: The final evaluation report.
@@ -55,8 +55,8 @@ This project also aims to implement the following advanced features:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/ai-powered-cricket-analytics.git
-    cd ai-powered-cricket-analytics
+    git clone https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics.git
+    cd AI-Powered-Cricket-Analytics
     ```
 2.  **Install the dependencies:**
     ```bash
@@ -64,11 +64,74 @@ This project also aims to implement the following advanced features:
     ```
 3.  **Run the Streamlit app:**
     ```bash
-    streamlit run cover_drive_analysis_realtime.py
+    streamlit run app.py
+    ```
+    OR 
+    ```bash
+    python cover_drive_analysis_realtime.py
     ```
 4.  **Open your web browser** and go to the URL provided by Streamlit.
-5.  **Upload a video** of a cover drive and wait for the analysis to complete.
+5.  **Upload a video** of a cover drive and wait for the analysis to complete both are available in the repository.
 6.  **View the results** and download the annotated video and evaluation report.
+
+## Example: Input & Outputs (Cover Drive)
+
+Below is a real example from this repo. You can play the input and annotated videos/GIFs right here, and open the reports with one click.
+
+---
+
+### Input Videos (GIFs Side by Side)
+
+<p align="center">
+  <img src="./examples/input_video.gif" alt="Input GIF 1" width="32%">
+  <img src="./examples/input_left_side_angle.gif" alt="Input GIF 2" width="32%">
+  <img src="./examples/input_left_hander_batsmen.gif" alt="Input GIF 3" width="32%">
+</p>
+
+---
+
+### Output: Annotated Videos (GIFs Side by Side)
+
+<p align="center">
+  <img src="./examples/annotated_video.gif" alt="Annotated GIF 1" width="32%">
+  <img src="./examples/annotated_left_side_angle.gif" alt="Annotated GIF 2" width="32%">
+  <img src="./examples/annotated_left_hander_batsmen.gif" alt="Annotated GIF 3" width="32%">
+</p>
+
+---
+
+### Output: Temporal Smoothness (PNGs Side by Side)
+
+<p align="center">
+  <img src="./examples/temporal_smoothness_video.png" alt="Temporal Smoothness 1" width="32%">
+  <img src="./examples/temporal_smoothness_left_side_angle.png" alt="Temporal Smoothness 2" width="32%">
+  <img src="./examples/temporal_smoothness_left_hander_batsmen.png" alt="Temporal Smoothness 3" width="32%">
+</p>
+
+---
+
+### Output Reports 
+
+<p align="center">
+  <a href="./examples/evaluation_report_video.txt">
+    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
+  </a>
+  <a href="./examples/evaluation_video.json">
+    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
+  </a>
+  <a href="./examples/evaluation_report_left_side_angle.txt">
+    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
+  </a>
+  <a href="./examples/evaluation_left_side_angle.json">
+    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
+  </a>
+  <a href="./examples/evaluation_report_left_hander_batsmen.txt">
+    <img src="https://img.shields.io/badge/Report-.txt-blue?style=for-the-badge" alt="TXT Report">
+  </a>
+  <a href="./examples/evaluation_left_hander_batsmen.json">
+    <img src="https://img.shields.io/badge/Report-.json-green?style=for-the-badge" alt="JSON Report">
+  </a>
+</p>
 
 ## Assumptions & Limitations
 
