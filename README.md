@@ -103,7 +103,7 @@ Below is a real example from this repo. You can play the input and annotated vid
 ### Output: Temporal Smoothness (PNGs Side by Side)
 
 <p align="center">
-  <img src="./examples/temporal_smoothness_video.png" alt="Temporal Smoothness 1" width="32%">
+  <img src="./examples/temporal_smoothness.png" alt="Temporal Smoothness 1" width="32%">
   <img src="./examples/temporal_smoothness_left_side_angle.png" alt="Temporal Smoothness 2" width="32%">
   <img src="./examples/temporal_smoothness_left_hander_batsmen.png" alt="Temporal Smoothness 3" width="32%">
 </p>
