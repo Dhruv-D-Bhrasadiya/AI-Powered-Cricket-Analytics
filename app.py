@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # app.py
+=======
+>>>>>>> e134b6430650d59c9f2c05b470f408f77ce66411
 import streamlit as st
 import os
 from pathlib import Path
