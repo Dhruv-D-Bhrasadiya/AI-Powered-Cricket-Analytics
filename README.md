@@ -53,16 +53,29 @@ This project also aims to implement the following advanced features:
 
 ## Setup & Run Instructions
 
-1.  **Clone the repository:**
+1. **Set up Python 3.10 environment (recommended):**
+   This project was developed and tested on **Python 3.10**.  
+   It is highly recommended to use a virtual environment with Python 3.10 to avoid compatibility issues.  
+
+   ```bash
+   # If you use conda
+   conda create -n cricket_analytics python=3.10
+   conda activate cricket_analytics
+
+   # If you use venv
+   python3.10 -m venv cricket_analytics
+   source cricket_analytics/bin/activate  # On Windows: cricket_analytics\Scripts\activate
+   
+2.  **Clone the repository:**
     ```bash
     git clone https://github.com/Dhruv-D-Bhrasadiya/AI-Powered-Cricket-Analytics.git
     cd AI-Powered-Cricket-Analytics
     ```
-2.  **Install the dependencies:**
+3.  **Install the dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Run the Streamlit app:**
+4.  **Run the Streamlit app:**
     ```bash
     streamlit run app.py
     ```
@@ -70,9 +83,9 @@ This project also aims to implement the following advanced features:
     ```bash
     python cover_drive_analysis_realtime.py
     ```
-4.  **Open your web browser** and go to the URL provided by Streamlit.
-5.  **Upload a video** of a cover drive and wait for the analysis to complete both are available in the repository.
-6.  **View the results** and download the annotated video and evaluation report.
+5.  **Open your web browser** and go to the URL provided by Streamlit.
+6.  **Upload a video** of a cover drive and wait for the analysis to complete both are available in the repository.
+7.  **View the results** and download the annotated video and evaluation report.
 
 ## Example
 
