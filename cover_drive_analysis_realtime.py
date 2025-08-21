@@ -4,6 +4,7 @@ import numpy as np
 import json
 import time
 import matplotlib.pyplot as plt
+import os
 
 def calculate_angle(a, b, c):
     a = np.array(a)  # First
@@ -128,6 +129,34 @@ def main():
             # 4. Front foot direction
             foot_direction = calculate_angle(left_knee, left_ankle, left_foot_index)
             cv2.putText(image, f"Foot Angle: {int(foot_direction)} deg", (10, 180), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
+            if foot_direction > config['foot_angle_lower_threshold'] and foot_direction < config['foot_angle_upper_threshold']:
+                evaluation["footwork"].append(1)
+            else:
+                evaluation["footwork"].append(0)
+
+            # 5. Balance (via spine lean)
+            if spine_lean < config['spine_lean_threshold']:
+                evaluation["balance"].append(1)
+            else:
+                evaluation["balance"].append(0)
+
+            # 6. Follow-through
+            # Simple check: after max elbow extension, does the elbow stay high?
+            if len(elbow_angles) > 10: # Ensure we have some frames to analyze
+                max_extension_frame = np.argmin(elbow_angles)
+                # Check frames after max extension
+                if len(elbow_angles) - max_extension_frame > 5: # Ensure there are frames after extension
+                    follow_through_angles = elbow_angles[max_extension_frame:]
+                    avg_follow_through_angle = np.mean(follow_through_angles)
+                    if avg_follow_through_angle > config['elbow_angle_threshold']:
+                        evaluation["follow_through"].append(1)
+                    else:
+                        evaluation["follow_through"].append(0)
+                else:
+                    evaluation["follow_through"].append(0) # Not enough frames for follow through
+            else:
+                evaluation["follow_through"].append(0) # Not enough frames to analyze
+
 
         except Exception as e:
             # print(f"Error processing frame: {e}")
@@ -171,6 +200,21 @@ def main():
     else:
         final_scores["head_position"]["feedback"] = "Try to keep your head over your front knee."
 
+    if final_scores["footwork"]["score"] > 7:
+        final_scores["footwork"]["feedback"] = "Excellent footwork, pointing towards the shot."
+    else:
+        final_scores["footwork"]["feedback"] = "Work on your front foot placement."
+
+    if final_scores["balance"]["score"] > 7:
+        final_scores["balance"]["feedback"] = "Good balance throughout the shot."
+    else:
+        final_scores["balance"]["feedback"] = "Try to maintain a more stable core."
+
+    if final_scores["follow_through"]["score"] > 7:
+        final_scores["follow_through"]["feedback"] = "Excellent follow-through, with a high elbow."
+    else:
+        final_scores["follow_through"]["feedback"] = "Work on completing your shot with a full follow-through."
+
     # Skill Grade Prediction
     average_score = np.mean([cat["score"] for cat in final_scores.values() if cat["score"] > 0])
     if average_score >= 8:
@@ -182,7 +226,11 @@ def main():
     final_scores["skill_grade"] = skill_grade
 
     # Save evaluation to a file
-    with open('output/evaluation.json', 'w') as f:
+    evaluation_json_path = 'output/evaluation.json'
+    evaluation_report_path = 'output/evaluation_report.txt'
+    temporal_smoothness_path = 'output/temporal_smoothness.png'
+
+    with open(evaluation_json_path, 'w') as f:
         json.dump(final_scores, f, indent=4)
 
     # Create and save temporal smoothness plot
@@ -193,10 +241,10 @@ def main():
     plt.xlabel('Frame')
     plt.ylabel('Angle (degrees)')
     plt.legend()
-    plt.savefig('output/temporal_smoothness.png')
+    plt.savefig(temporal_smoothness_path)
 
     # Generate and save text report
-    with open('output/evaluation_report.txt', 'w') as f:
+    with open(evaluation_report_path, 'w') as f:
         f.write("AthleteRise - AI-Powered Cricket Analytics Report\n")
         f.write("====================================================\n\n")
         f.write(f"Overall Skill Grade: {final_scores['skill_grade']}\n\n")

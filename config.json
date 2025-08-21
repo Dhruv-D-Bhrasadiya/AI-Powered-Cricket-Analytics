@@ -1,4 +1,7 @@
 {
     "elbow_angle_threshold": 120,
-    "head_knee_distance_threshold": 50
+    "head_knee_distance_threshold": 50,
+    "foot_angle_lower_threshold": 45,
+    "foot_angle_upper_threshold": 135,
+    "spine_lean_threshold": 30
 }

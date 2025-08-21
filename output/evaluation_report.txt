@@ -4,8 +4,8 @@ AthleteRise - AI-Powered Cricket Analytics Report
 Overall Skill Grade: Intermediate
 
 Footwork:
-  Score: 0.00/10
-  Feedback: No data
+  Score: 6.32/10
+  Feedback: Work on your front foot placement.
 
 Head Position:
   Score: 10.00/10
@@ -17,9 +17,9 @@ Swing Control:
 
 Balance:
   Score: 0.00/10
-  Feedback: No data
+  Feedback: Try to maintain a more stable core.
 
 Follow Through:
-  Score: 0.00/10
-  Feedback: No data
+  Score: 1.47/10
+  Feedback: Work on completing your shot with a full follow-through.
 

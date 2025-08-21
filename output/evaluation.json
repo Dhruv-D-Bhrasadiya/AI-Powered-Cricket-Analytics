@@ -1,7 +1,7 @@
 {
     "footwork": {
-        "score": 0,
-        "feedback": "No data"
+        "score": 6.323529411764706,
+        "feedback": "Work on your front foot placement."
     },
     "head_position": {
         "score": 10.0,
@@ -12,12 +12,12 @@
         "feedback": "Work on maintaining a high elbow."
     },
     "balance": {
-        "score": 0,
-        "feedback": "No data"
+        "score": 0.0,
+        "feedback": "Try to maintain a more stable core."
     },
     "follow_through": {
-        "score": 0,
-        "feedback": "No data"
+        "score": 1.4705882352941178,
+        "feedback": "Work on completing your shot with a full follow-through."
     },
     "skill_grade": "Intermediate"
 }
